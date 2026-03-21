@@ -1,0 +1,101 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/products"
+public_folder: "/images/products"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "_data/products"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - label: "Product Name"
+        name: "name"
+        widget: "string"
+        hint: "Full name including storage. E.g. iPhone 15 Pro Max 256GB"
+
+      - label: "Badge / Status"
+        name: "badge"
+        widget: "select"
+        options:
+          - { label: "Brand New Sealed Unlocked", value: "badge-new-unlocked" }
+          - { label: "Brand New Sealed Locked", value: "badge-new-locked" }
+          - { label: "Open Box Unlocked", value: "badge-open-unlocked" }
+          - { label: "Open Box Locked", value: "badge-open-locked" }
+          - { label: "Pre-Owned Grade A", value: "badge-a" }
+          - { label: "Pre-Owned Grade B", value: "badge-b" }
+          - { label: "Pre-Owned Grade C", value: "badge-c" }
+          - { label: "Incoming Stock", value: "badge-incoming" }
+          - { label: "Sold Out", value: "badge-sold" }
+
+      - label: "Storage"
+        name: "storage"
+        widget: "string"
+        required: false
+        hint: "E.g. 128GB, 256GB, 512GB, 1TB. Leave blank for accessories."
+
+      - label: "Network"
+        name: "network"
+        widget: "select"
+        options:
+          - { label: "Unlocked — Works on all Nigerian networks", value: "unlocked" }
+          - { label: "Locked — AT&T", value: "locked-att" }
+          - { label: "Locked — T-Mobile", value: "locked-tmobile" }
+          - { label: "Locked — Verizon", value: "locked-verizon" }
+        default: "unlocked"
+
+      - label: "Battery Health %"
+        name: "battery"
+        widget: "number"
+        required: false
+        value_type: "int"
+        min: 1
+        max: 100
+        hint: "Only fill this for Pre-Owned grades (A, B, C). Leave blank for Brand New, Open Box, or Incoming."
+
+      - label: "USD Price"
+        name: "price_usd"
+        widget: "number"
+        required: false
+        value_type: "int"
+        hint: "US retail reference price in whole dollars. E.g. 999"
+
+      - label: "NGN Price (₦)"
+        name: "price_ngn"
+        widget: "number"
+        required: false
+        value_type: "int"
+        hint: "Nigerian Naira price as whole number. E.g. 1550000"
+
+      - label: "WhatsApp Message"
+        name: "wa_message"
+        widget: "string"
+        required: false
+        hint: "Pre-filled message sent when buyer clicks the button. Auto-generated from product name if left blank."
+
+      - label: "Product Images"
+        name: "images"
+        widget: "list"
+        max: 5
+        field:
+          label: "Image URL"
+          name: "url"
+          widget: "string"
+          hint: "Paste a Cloudinary image URL. First image is the main photo."
+
+      - label: "Video URL"
+        name: "video_url"
+        widget: "string"
+        required: false
+        hint: "Optional — paste a single Cloudinary video URL."
+
+      - label: "Available"
+        name: "available"
+        widget: "boolean"
+        default: true
+        hint: "Uncheck to hide this product from the storefront."
