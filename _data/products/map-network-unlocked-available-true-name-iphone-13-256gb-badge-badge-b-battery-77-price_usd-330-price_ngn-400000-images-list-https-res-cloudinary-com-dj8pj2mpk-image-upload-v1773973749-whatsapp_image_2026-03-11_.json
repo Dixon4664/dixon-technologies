@@ -1,0 +1,13 @@
+{
+  "network": "unlocked",
+  "available": true,
+  "name": "iPhone 13 256GB",
+  "badge": "badge-b",
+  "battery": 77,
+  "price_usd": 330,
+  "price_ngn": 400000,
+  "images": [
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973749/WhatsApp_Image_2026-03-11_at_6.28.06_PM_eg7kys.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973750/WhatsApp_Image_2026-03-11_at_6.28.05_PM_c2klyv.jpg"
+  ]
+}
