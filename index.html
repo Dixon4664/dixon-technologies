@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://dixontechllc.com">
+    
+    <meta name="description" content="Dixon Technologies - Premium authentic tech in Nigeria. 100% IMEI verified, transparent battery health. Inspect in Ado-Ekiti or Abuja, or pay before nationwide shipping.">
+    <meta property="og:title" content="Dixon Technologies | Premium Authentic Tech">
+    <meta property="og:description" content="100% verified authentic devices in Nigeria. Clean IMEIs, transparent battery health, and a strict See-and-Pay guarantee.">
+    <meta property="og:image" content="Dixon_Social_Profile.png">
+    <meta property="og:url" content="https://dixontechllc.com">
+    <meta property="og:type" content="website">
+
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://res.cloudinary.com; connect-src 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <title>Dixon Technologies | Premium Authentic Tech</title>
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='40' height='40' viewBox='-5 -5 85 95' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 0 0 L 0 85 L 40 85 C 85 85 85 0 40 0 Z' fill='%230A1526' /%3E%3Cg stroke='%2300E5FF' stroke-width='3' stroke-linecap='round' fill='none'%3E%3Cline x1='12' y1='18' x2='48' y2='18' /%3E%3Ccircle cx='12' cy='18' r='2.5' fill='%2300E5FF'/%3E%3Ccircle cx='48' cy='18' r='3' fill='%2300E5FF'/%3E%3Cline x1='12' y1='30' x2='55' y2='30' /%3E%3Ccircle cx='12' cy='30' r='2.5' fill='%2300E5FF'/%3E%3Ccircle cx='55' cy='30' r='3' fill='%2300E5FF'/%3E%3Cline x1='12' y1='42' x2='62' y2='42' /%3E%3Ccircle cx='12' cy='42' r='2.5' fill='%2300E5FF'/%3E%3Crect x='28' y='34' width='16' height='16' rx='3' stroke='%2300E5FF' stroke-width='2' fill='none'/%3E%3Crect x='32' y='38' width='8' height='8' rx='1' fill='%2300E5FF' opacity='0.7'/%3E%3Ccircle cx='62' cy='42' r='4.5' fill='%2300E5FF'/%3E%3Cline x1='12' y1='54' x2='55' y2='54' /%3E%3Ccircle cx='12' cy='54' r='2.5' fill='%2300E5FF'/%3E%3Ccircle cx='55' cy='54' r='3' fill='%2300E5FF'/%3E%3Cline x1='12' y1='66' x2='48' y2='66' /%3E%3Ccircle cx='12' cy='66' r='2.5' fill='%2300E5FF'/%3E%3Ccircle cx='48' cy='66' r='3' fill='%2300E5FF'/%3E%3Cline x1='12' y1='18' x2='12' y2='66' stroke-width='1.5' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --cyan: #00E5FF;
+            --navy: #0A1526;
+            --navy-mid: #14263d;
+            --silver: #8CA6B9;
+            --cool-grey: #E4E9ED;
+            --white: #FFFFFF;
+            --ease: cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--white);
+            color: var(--navy);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+        body.menu-open { overflow: hidden; }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; line-height: 1.2; }
+        a { text-decoration: none; color: inherit; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            padding: 14px 28px; font-family: 'Inter', sans-serif;
+            font-weight: 600; font-size: 0.95rem; border-radius: 8px;
+            transition: all 0.25s var(--ease); cursor: pointer; border: none;
+        }
+        .btn-primary { background: var(--cyan); color: var(--navy); }
+        .btn-primary:hover { background: #00cce6; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,229,255,0.35); }
+        .btn-dark { background: var(--navy); color: var(--white); }
+        .btn-dark:hover { background: var(--navy-mid); transform: translateY(-2px); }
+        .btn-outline { background: transparent; color: var(--navy); border: 1.5px solid var(--navy); }
+        .btn-outline:hover { background: var(--cool-grey); }
+
+        /* NAVBAR */
+        nav {
+            position: fixed; top: 0; width: 100%;
+            background: rgba(255,255,255,0.96); backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px); z-index: 1000;
+            border-bottom: 1px solid rgba(0,0,0,0.06); padding: 13px 0;
+        }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo { display: flex; align-items: center; z-index: 1001; flex-shrink: 0; }
+        .nav-links { display: flex; gap: 1.8rem; align-items: center; }
+        .nav-links a { font-size: 0.9rem; font-weight: 500; color: var(--navy); transition: color 0.2s; }
+        .nav-links a:hover { color: var(--cyan); }
+
+        /* Mobile toggle */
+        .menu-toggle {
+            display: none; flex-direction: column; gap: 5px;
+            cursor: pointer; z-index: 1001; padding: 4px; background: none; border: none;
+        }
+        .menu-toggle span {
+            display: block; width: 24px; height: 2px;
+            background: var(--navy); transition: all 0.3s var(--ease); transform-origin: center;
+        }
+        .menu-toggle.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+        .menu-toggle.active span:nth-child(2) { opacity: 0; }
+        .menu-toggle.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+        /* Mobile full-screen nav */
+        .mobile-nav {
+            display: none; position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%; background: var(--white);
+            z-index: 999; flex-direction: column;
+            justify-content: center; align-items: center;
+            gap: 2rem; opacity: 0; transition: opacity 0.3s var(--ease);
+        }
+        .mobile-nav.active { opacity: 1; }
+        .mobile-nav a {
+            font-size: 1.5rem; font-weight: 600; color: var(--navy);
+            font-family: 'Playfair Display', serif; transition: color 0.2s;
+        }
+        .mobile-nav a:hover { color: var(--cyan); }
+
+        /* Mobile sticky CTA */
+        .mobile-sticky-cta {
+            display: none; position: fixed; bottom: 0; left: 0;
+            width: 100%; background: var(--white); padding: 14px 5%;
+            z-index: 998; box-shadow: 0 -3px 15px rgba(0,0,0,0.07);
+        }
+        .mobile-sticky-cta .btn { width: 100%; font-size: 1rem; padding: 16px; }
+
+        /* HERO */
+        .hero {
+            background: var(--navy); color: var(--white);
+            padding: 190px 0 130px; text-align: center;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,229,255,0.07) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .hero h1 { color: var(--white); font-size: 3.8rem; margin-bottom: 1.5rem; max-width: 880px; margin-inline: auto; }
+        .hero h1 span { color: var(--cyan); }
+        .hero p { font-size: 1.2rem; color: var(--cool-grey); max-width: 620px; margin: 0 auto 2.5rem; font-weight: 300; }
+
+
+        /* TRUST BAR */
+        .trust-bar { background: #fafafa; padding: 28px 0; border-bottom: 1px solid #eee; }
+        .trust-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 18px; }
+        .trust-item { display: flex; align-items: center; gap: 9px; font-weight: 600; font-size: 0.9rem; color: var(--navy); }
+        .trust-icon { width: 22px; height: 22px; color: var(--cyan); flex-shrink: 0; }
+
+        /* SECTIONS */
+        .section-pad { padding: 100px 0; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.4rem; margin-bottom: 12px; }
+        .section-header p { color: var(--silver); font-size: 1rem; max-width: 560px; margin: 0 auto; }
+
+        /* LISTINGS */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 36px; }
+        .card {
+            background: var(--white); border: 1px solid var(--cool-grey);
+            border-radius: 16px; padding: 20px;
+            transition: all 0.28s var(--ease); position: relative; display: flex; flex-direction: column;
+        }
+        .card:hover { box-shadow: 0 20px 50px rgba(10,21,38,0.09); transform: translateY(-5px); }
+        .badge {
+            position: absolute; top: 20px; left: 20px; padding: 5px 11px;
+            border-radius: 20px; font-size: 0.75rem; font-weight: 700; z-index: 10; letter-spacing: 0.02em;
+        }
+        .badge-new     { background: var(--cyan); color: var(--navy); }
+        .badge-open    { background: var(--silver); color: var(--white); }
+        .badge-a       { background: #1a9e6a; color: var(--white); }
+        .badge-b       { background: var(--navy); color: var(--white); }
+        .badge-sold    { background: #e63950; color: var(--white); }
+        .badge-incoming { background: #f5a623; color: var(--navy); }
+
+        .card-img { width: 100%; height: 240px; object-fit: contain; margin-bottom: 18px; background: #fdfdfd; border-radius: 8px; }
+        .card.sold-out .card-img { filter: grayscale(100%); opacity: 0.55; }
+        .card.sold-out { opacity: 0.8; }
+        .card h3 { font-family: 'Inter', sans-serif; font-size: 1.15rem; font-weight: 600; margin-bottom: 4px; }
+        .card-meta { font-size: 0.82rem; color: var(--silver); margin-bottom: 14px; font-weight: 500; }
+        .pricing { display: flex; align-items: baseline; gap: 8px; margin-bottom: 18px; margin-top: auto; flex-wrap: wrap; }
+        .price-ref { font-size: 0.78rem; color: #aaa; text-decoration: line-through; }
+        .price-ref-label { font-size: 0.68rem; color: #bbb; white-space: nowrap; }
+        .price-ngn { font-size: 1.45rem; font-weight: 700; color: var(--navy); }
+        .price-tbd { font-size: 0.95rem; font-weight: 600; color: var(--silver); font-style: italic; }
+
+        /* CARD IMAGE CAROUSEL */
+        .card-img-wrap {
+            position: relative;
+            width: 100%;
+            height: 240px;
+            margin-bottom: 18px;
+            background: #fdfdfd;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .card.sold-out .card-img-wrap { filter: grayscale(100%); opacity: 0.55; }
+        .card-img-wrap .card-img {
+            width: 100%;
+            height: 240px;
+            object-fit: contain;
+            background: #fdfdfd;
+            border-radius: 8px;
+            margin-bottom: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .card-img-wrap .card-img.active { opacity: 1; }
+        .carousel-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(10,21,38,0.65);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 5;
+            font-size: 0.85rem;
+            line-height: 1;
+            padding: 0;
+        }
+        .card-img-wrap:hover .carousel-arrow { opacity: 1; }
+        .carousel-arrow:hover { background: rgba(10,21,38,0.85); }
+        .carousel-arrow.prev { left: 8px; }
+        .carousel-arrow.next { right: 8px; }
+        .carousel-dots {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 6px;
+            z-index: 5;
+        }
+        .carousel-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: rgba(10,21,38,0.3);
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .carousel-dot.active { background: var(--cyan); }
+
+        /* LIGHTBOX */
+        .lightbox-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(10,21,38,0.92);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease, visibility 0.25s ease;
+        }
+        .lightbox-overlay.open { opacity: 1; visibility: visible; }
+        .lightbox-close {
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+            z-index: 2001;
+        }
+        .lightbox-close:hover { background: rgba(0,229,255,0.25); }
+        .lightbox-img {
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 8px;
+            user-select: none;
+        }
+        .lightbox-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            border: 1.5px solid rgba(0,229,255,0.3);
+            color: var(--cyan);
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .lightbox-arrow:hover { background: rgba(0,229,255,0.2); }
+        .lightbox-arrow.prev { left: 16px; }
+        .lightbox-arrow.next { right: 16px; }
+        .lightbox-counter {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--silver);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        .how-it-works { background: var(--navy); color: var(--white); }
+        .how-it-works h2 { color: var(--white); }
+        .how-it-works .section-header p { color: var(--silver); }
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 60px; }
+        .step { text-align: center; }
+        .step-number {
+            width: 50px; height: 50px; background: var(--cyan); color: var(--navy);
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            font-size: 1.4rem; font-weight: 700; margin: 0 auto 20px; font-family: 'Playfair Display', serif;
+        }
+        .step h4 { color: var(--white); font-size: 1.1rem; margin-bottom: 10px; font-family: 'Inter', sans-serif; font-weight: 600; }
+        .step p { color: var(--silver); font-size: 0.92rem; line-height: 1.65; }
+        .step p strong { color: var(--cyan); }
+
+        /* QUALITY GRADES */
+        .grades { background: #f7f9fb; }
+        .integrity-box {
+            background: rgba(0,229,255,0.08); border-left: 4px solid var(--cyan);
+            padding: 20px 24px; border-radius: 0 8px 8px 0; margin-bottom: 48px;
+        }
+        .integrity-box h4 { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1rem; margin-bottom: 6px; }
+        .integrity-box p { font-size: 0.92rem; color: #444; }
+        .integrity-box strong { color: var(--navy); }
+        .grades-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
+        .grade-tier { background: var(--white); border: 1px solid var(--cool-grey); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; }
+        .tier-header { background: var(--navy); padding: 18px 22px; }
+        .tier-header h3 { font-family: 'Inter', sans-serif; font-size: 1.05rem; font-weight: 700; color: var(--white); }
+        .tier-body { padding: 22px; flex: 1; }
+        .grade-item { padding-bottom: 20px; margin-bottom: 20px; border-bottom: 1px solid var(--cool-grey); }
+        .grade-item:last-child { padding-bottom: 0; margin-bottom: 0; border-bottom: none; }
+        .grade-item-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 7px; }
+        .grade-item h5 { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: var(--navy); }
+        .grade-tag { font-size: 0.68rem; background: var(--cool-grey); padding: 3px 8px; border-radius: 4px; color: #555; white-space: nowrap; font-weight: 600; flex-shrink: 0; }
+        .grade-item p { font-size: 0.87rem; color: #555; line-height: 1.55; }
+
+        /* FAQ */
+        .faq-grid { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+        .faq-item { border: 1px solid var(--cool-grey); border-radius: 10px; overflow: hidden; }
+        .faq-question {
+            width: 100%; display: flex; justify-content: space-between; align-items: center;
+            padding: 20px 22px; font-family: 'Inter', sans-serif; font-size: 0.97rem; font-weight: 600;
+            color: var(--navy); background: var(--white); cursor: pointer; border: none; text-align: left;
+            gap: 16px; transition: background 0.2s;
+        }
+        .faq-question:hover { background: #f7f9fb; }
+        .faq-chevron { flex-shrink: 0; transition: transform 0.3s var(--ease); color: var(--cyan); }
+        .faq-item.open .faq-chevron { transform: rotate(180deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s var(--ease); }
+        .faq-answer-inner {
+            padding: 18px 22px 22px; font-size: 0.92rem; color: #555; line-height: 1.7;
+            border-top: 1px solid var(--cool-grey);
+        }
+        .faq-answer-inner strong { color: var(--navy); }
+
+        /* BANNER */
+        .banner { background: var(--cyan); padding: 80px 0; text-align: center; }
+        .banner h2 { color: var(--navy); font-size: 2.3rem; max-width: 780px; margin: 0 auto; }
+
+        /* FOOTER */
+        footer { background: var(--navy); color: var(--silver); padding: 60px 0 28px; border-top: 1px solid rgba(255,255,255,0.06); }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px; margin-bottom: 48px; }
+        .footer-tagline { margin-top: 16px; font-size: 0.88rem; line-height: 1.7; }
+        .footer-links h5 { color: var(--white); font-size: 0.85rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 18px; font-family: 'Inter', sans-serif; }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 10px; }
+        .footer-links a { font-size: 0.9rem; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--cyan); }
+        .copyright { text-align: center; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.07); font-size: 0.8rem; color: #4a5568; }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            .grades-grid { grid-template-columns: 1fr 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            body { padding-bottom: 76px; }
+            .menu-toggle { display: flex; }
+            .mobile-nav { display: flex; }
+            .mobile-sticky-cta { display: block; }
+            .nav-links { display: none; }
+            .hero { padding: 140px 0 90px; }
+            .hero h1 { font-size: 2.3rem; }
+            .hero p { font-size: 1.05rem; }
+            .steps-grid { grid-template-columns: 1fr; gap: 32px; }
+            .grades-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+            .trust-inner { flex-direction: column; align-items: flex-start; }
+            .banner h2 { font-size: 1.7rem; }
+            .section-header h2 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container nav-inner">
+            <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;" class="logo">
+                <svg width="300" height="66" viewBox="0 0 350 125" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(38, 15)">
+                        <path d="M 0 0 L 0 85 L 40 85 C 85 85 85 0 40 0 Z" fill="#0A1526"/>
+                        <g stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" fill="none">
+                            <line x1="12" y1="18" x2="48" y2="18"/>
+                            <circle cx="12" cy="18" r="2.5" fill="#00E5FF"/>
+                            <circle cx="48" cy="18" r="3" fill="#00E5FF"/>
+                            <line x1="12" y1="30" x2="55" y2="30"/>
+                            <circle cx="12" cy="30" r="2.5" fill="#00E5FF"/>
+                            <circle cx="55" cy="30" r="3" fill="#00E5FF"/>
+                            <line x1="12" y1="42" x2="62" y2="42"/>
+                            <circle cx="12" cy="42" r="2.5" fill="#00E5FF"/>
+                            <rect x="28" y="34" width="16" height="16" rx="3" stroke="#00E5FF" stroke-width="2" fill="none"/>
+                            <rect x="32" y="38" width="8" height="8" rx="1" fill="#00E5FF" opacity="0.7"/>
+                            <circle cx="62" cy="42" r="4.5" fill="#00E5FF"/>
+                            <line x1="12" y1="54" x2="55" y2="54"/>
+                            <circle cx="12" cy="54" r="2.5" fill="#00E5FF"/>
+                            <circle cx="55" cy="54" r="3" fill="#00E5FF"/>
+                            <line x1="12" y1="66" x2="48" y2="66"/>
+                            <circle cx="12" cy="66" r="2.5" fill="#00E5FF"/>
+                            <circle cx="48" cy="66" r="3" fill="#00E5FF"/>
+                            <line x1="12" y1="18" x2="12" y2="66" stroke-width="1.5" opacity="0.4"/>
+                        </g>
+                    </g>
+                    <text x="120" y="90" font-family="'Playfair Display', serif" font-weight="600" font-size="76" fill="#0A1526" letter-spacing="-1">ixon</text>
+                    <g transform="translate(258, 56)" fill="none" stroke="#00E5FF" stroke-width="4.5" stroke-linecap="butt">
+                        <path d="M 0 -10 A 10 10 0 0 1 10 0"/>
+                        <path d="M 0 -20 A 20 20 0 0 1 20 0"/>
+                        <path d="M 0 -30 A 30 30 0 0 1 30 0"/>
+                        <path d="M 0 -40 A 40 40 0 0 1 40 0"/>
+                        <path d="M 0 -50 A 50 50 0 0 1 50 0"/>
+                    </g>
+                    <text x="126" y="110" font-family="'Inter', sans-serif" font-weight="500" font-size="12" letter-spacing="4" fill="#0A1526">TECHNOLOGIES</text>
+                </svg>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <div class="nav-links">
+                <a href="#listings">Current Stock</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#faq">FAQ</a>
+                <a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#120;&#111;&#110;&#116;&#101;&#099;&#104;&#108;&#108;&#099;&#046;&#099;&#111;&#109;">Contact</a>
+                <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20reaching%20out%20from%20dixontechllc.com." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Message Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MOBILE NAV -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#listings" class="mobile-nav-link">Current Stock</a>
+        <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+        <a href="#faq" class="mobile-nav-link">FAQ</a>
+        <a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#120;&#111;&#110;&#116;&#101;&#099;&#104;&#108;&#108;&#099;&#046;&#099;&#111;&#109;" class="mobile-nav-link">Contact</a>
+    </div>
+
+    <!-- MOBILE STICKY CTA -->
+    <div class="mobile-sticky-cta">
+        <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20reaching%20out%20from%20dixontechllc.com." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Chat With Us on WhatsApp</a>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="container">
+            <h1>Don't Gamble With Your Gadgets. Get <span>Authentic Tech.</span></h1>
+            <p>100% verified authentic devices. Clean IMEIs. Transparent battery health. Inspect before you pay — or we ship to you nationwide.</p>
+            <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'd%20like%20to%20enquire%20about%20getting%20a%20device." target="_blank" rel="noopener noreferrer" class="btn btn-primary">Speak With Us on WhatsApp</a>
+        </div>
+    </header>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="container trust-inner">
+            <div class="trust-item">
+                <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                100% IMEI Verified
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Inspect in Ado-Ekiti &amp; Abuja
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                Transparent Battery Health
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+                Nationwide Shipping
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+                Zero Counterfeits
+            </div>
+        </div>
+    </section>
+
+    <!-- LISTINGS -->
+    <section id="listings" class="section-pad container">
+        <div class="section-header">
+            <h2>Current Stock</h2>
+            <p>Live inventory. Contact us on WhatsApp to confirm availability and secure your device.</p>
+        </div>
+        <!--
+        ╔══════════════════════════════════════════════════════════════════╗
+        ║  HOW TO ADD A NEW PRODUCT TO THIS PAGE                          ║
+        ║                                                                  ║
+        ║  1. Open inventory-manager.html in your browser.                ║
+        ║  2. Fill in all product details, then click "Generate Card      ║
+        ║     Code" on the right side.                                     ║
+        ║  3. Click "Copy Code" to copy the generated HTML block.         ║
+        ║  4. Return to this file (index.html) in your text editor.       ║
+        ║  5. Paste the copied block BETWEEN the two marker comments      ║
+        ║     below (after ADD NEW PRODUCT CARDS, before END OF PRODUCT   ║
+        ║     CARDS). Each new card goes at the TOP of the list.          ║
+        ║  6. Save this file.                                             ║
+        ║  7. Re-upload index.html to Netlify — your listing is live!     ║
+        ║                                                                  ║
+        ║  MULTI-IMAGE CARDS:                                              ║
+        ║  When a product has multiple photos, the card uses a             ║
+        ║  <div class="card-img-wrap"> container instead of a plain        ║
+        ║  <img>. The inventory manager handles this automatically.        ║
+        ║  See the example multi-image card below for reference.           ║
+        ╚══════════════════════════════════════════════════════════════════╝
+        -->
+        <div class="grid">
+
+            <!-- ============================================================ -->
+            <!-- ADD NEW PRODUCT CARDS BELOW THIS LINE                        -->
+            <!-- ============================================================ -->
+
+            <!-- EXAMPLE: Multi-image card (3 photos) -->
+<div class="card">
+    <span class="badge badge-a">Grade A</span>
+    <div class="card-img-wrap">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773970973/5035475518635052312_ezrqds.jpg" alt="iPhone 14 256GB - photo 1" class="card-img active" loading="lazy">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773970973/5035475518635052311_takglg.jpg" alt="iPhone 14 256GB - photo 2" class="card-img" loading="lazy">
+        <button class="carousel-arrow prev" aria-label="Previous image">&#8249;</button>
+        <button class="carousel-arrow next" aria-label="Next image">&#8250;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Image 1"></button>
+            <button class="carousel-dot" aria-label="Image 2"></button>
+        </div>
+    </div>
+    <h3>iPhone 14 256GB</h3>
+    <div class="card-meta">Unlocked · Works on all Nigerian networks · Battery Health 86%</div>
+    <div class="pricing">
+                <span class="price-ref">$480</span><span class="price-ref-label"> US retail</span>
+                <span class="price-ngn">₦650,000</span>
+    </div>
+    <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20interested%20in%20the%20iPhone%2014%20256GB." target="_blank" rel="noopener noreferrer"
+       class="btn btn-dark" style="width:100%;">Enquire on WhatsApp</a>
+</div>
+
+<div class="card">
+    <span class="badge badge-a">Grade A</span>
+    <div class="card-img-wrap">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773972391/WhatsApp_Image_2026-03-13_at_7.49.42_PM_pmvjcr.jpg" alt="iPhone 13 128GB - photo 1" class="card-img active" loading="lazy">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773972391/WhatsApp_Image_2026-03-13_at_7.49.43_PM_h9bput.jpg" alt="iPhone 13 128GB - photo 2" class="card-img" loading="lazy">
+        <button class="carousel-arrow prev" aria-label="Previous image">&#8249;</button>
+        <button class="carousel-arrow next" aria-label="Next image">&#8250;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Image 1"></button>
+            <button class="carousel-dot" aria-label="Image 2"></button>
+        </div>
+    </div>
+    <h3>iPhone 13 128GB</h3>
+    <div class="card-meta">Unlocked · Works on all Nigerian networks · Battery Health 96%</div>
+    <div class="pricing">
+                <span class="price-ref">$300</span><span class="price-ref-label"> US retail</span>
+                <span class="price-ngn">₦380,000</span>
+    </div>
+    <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20interested%20in%20the%20iPhone%2013%20128GB." target="_blank" rel="noopener noreferrer"
+       class="btn btn-dark" style="width:100%;">Enquire on WhatsApp</a>
+</div>
+
+<div class="card">
+    <span class="badge badge-a">Grade A</span>
+    <div class="card-img-wrap">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773972966/WhatsApp_Image_2026-03-12_at_6.08.55_PM_dzozd5.jpg" alt="iPhone 12 Pro Max 128GB - photo 1" class="card-img active" loading="lazy">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773972966/WhatsApp_Image_2026-03-12_at_6.08.55_PM_1_jeqaad.jpg" alt="iPhone 12 Pro Max 128GB - photo 2" class="card-img" loading="lazy">
+        <button class="carousel-arrow prev" aria-label="Previous image">&#8249;</button>
+        <button class="carousel-arrow next" aria-label="Next image">&#8250;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Image 1"></button>
+            <button class="carousel-dot" aria-label="Image 2"></button>
+        </div>
+    </div>
+    <h3>iPhone 12 Pro Max 128GB</h3>
+    <div class="card-meta">Unlocked · Works on all Nigerian networks · Battery Health 81%</div>
+    <div class="pricing">
+                <span class="price-ref">$350</span><span class="price-ref-label"> US retail</span>
+                <span class="price-ngn">₦400,000</span>
+    </div>
+    <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20interested%20in%20the%20iPhone%2012%20Pro%20Max%20128GB." target="_blank" rel="noopener noreferrer"
+       class="btn btn-dark" style="width:100%;">Enquire on WhatsApp</a>
+</div>
+
+<div class="card">
+    <span class="badge badge-a">Grade A</span>
+    <div class="card-img-wrap">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973267/WhatsApp_Image_2026-03-11_at_6.28.07_PM_1_h1l40j.jpg" alt="iPhone 16 Plus 128GB - photo 1" class="card-img active" loading="lazy">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973268/WhatsApp_Image_2026-03-11_at_6.28.07_PM_l1bqjd.jpg" alt="iPhone 16 Plus 128GB - photo 2" class="card-img" loading="lazy">
+        <button class="carousel-arrow prev" aria-label="Previous image">&#8249;</button>
+        <button class="carousel-arrow next" aria-label="Next image">&#8250;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Image 1"></button>
+            <button class="carousel-dot" aria-label="Image 2"></button>
+        </div>
+    </div>
+    <h3>iPhone 16 Plus 128GB</h3>
+    <div class="card-meta">Unlocked · Works on all Nigerian networks</div>
+    <div class="pricing">
+                <span class="price-ref">$700</span><span class="price-ref-label"> US retail</span>
+                <span class="price-ngn">₦905,000</span>
+    </div>
+    <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20interested%20in%20the%20iPhone%2016%20Plus%20128GB." target="_blank" rel="noopener noreferrer"
+       class="btn btn-dark" style="width:100%;">Enquire on WhatsApp</a>
+</div>
+
+<div class="card">
+    <span class="badge badge-a">Grade A</span>
+    <div class="card-img-wrap">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973541/WhatsApp_Image_2026-03-11_at_6.28.03_PM_gikpz8.jpg" alt="iPhone 14 Plus 128GB - photo 1" class="card-img active" loading="lazy">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973540/WhatsApp_Image_2026-03-11_at_6.28.03_PM_1_wip1rc.jpg" alt="iPhone 14 Plus 128GB - photo 2" class="card-img" loading="lazy">
+        <button class="carousel-arrow prev" aria-label="Previous image">&#8249;</button>
+        <button class="carousel-arrow next" aria-label="Next image">&#8250;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Image 1"></button>
+            <button class="carousel-dot" aria-label="Image 2"></button>
+        </div>
+    </div>
+    <h3>iPhone 14 Plus 128GB</h3>
+    <div class="card-meta">Unlocked · Works on all Nigerian networks</div>
+    <div class="pricing">
+                <span class="price-ref">$450</span><span class="price-ref-label"> US retail</span>
+                <span class="price-ngn">₦585,000</span>
+    </div>
+    <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20interested%20in%20the%20iPhone%2014%20Plus%20128GB." target="_blank" rel="noopener noreferrer"
+       class="btn btn-dark" style="width:100%;">Enquire on WhatsApp</a>
+</div>
+
+<div class="card">
+    <span class="badge badge-b">Grade B</span>
+    <div class="card-img-wrap">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973749/WhatsApp_Image_2026-03-11_at_6.28.06_PM_eg7kys.jpg" alt="iPhone 13 128GB - photo 1" class="card-img active" loading="lazy">
+        <img src="https://res.cloudinary.com/dj8pj2mpk/image/upload/v1773973750/WhatsApp_Image_2026-03-11_at_6.28.05_PM_c2klyv.jpg" alt="iPhone 13 128GB - photo 2" class="card-img" loading="lazy">
+        <button class="carousel-arrow prev" aria-label="Previous image">&#8249;</button>
+        <button class="carousel-arrow next" aria-label="Next image">&#8250;</button>
+        <div class="carousel-dots">
+            <button class="carousel-dot active" aria-label="Image 1"></button>
+            <button class="carousel-dot" aria-label="Image 2"></button>
+        </div>
+    </div>
+    <h3>iPhone 13 128GB</h3>
+    <div class="card-meta">Unlocked · Works on all Nigerian networks</div>
+    <div class="pricing">
+                <span class="price-ref">$280</span><span class="price-ref-label"> US retail</span>
+                <span class="price-ngn">₦370,000</span>
+    </div>
+    <a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies%2C%20I'm%20interested%20in%20the%20iPhone%2013%20128GB." target="_blank" rel="noopener noreferrer"
+       class="btn btn-dark" style="width:100%;">Enquire on WhatsApp</a>
+</div>
+
+            <!-- ============================================================ -->
+            <!-- END OF PRODUCT CARDS                                         -->
+            <!-- ============================================================ -->
+
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="how-it-works section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Zero risk. Total transparency.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Browse &amp; Choose</h4>
+                    <p>View our live inventory. Every listing includes the exact battery health percentage, accurate grade, and network lock status — no guesswork whatsoever.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Confirm on WhatsApp</h4>
+                    <p>Chat with our team directly. We confirm stock, verify compatibility for your location, and walk you through payment and logistics from start to finish.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Inspect &amp; Pay</h4>
+                    <p>In <strong>Ado-Ekiti or Abuja?</strong> Schedule a physical inspection via our local escrows — pay only when satisfied. Everywhere else: pay before dispatch with a <strong>72-hour return guarantee</strong> if anything doesn't match.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUALITY GRADES -->
+    <section id="grades" class="grades section-pad">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Quality Standards</h2>
+                <p>A strict, transparent grading system. You always know exactly what you're paying for.</p>
+            </div>
+            <div class="integrity-box">
+                <h4>The Dixon Integrity Guarantee</h4>
+                <p>Every device we sell is <strong>100% IMEI Verified</strong> — never reported lost or stolen. For all pre-owned devices, the <strong>exact Battery Health Percentage</strong> is stated clearly on the listing before you commit to anything.</p>
+            </div>
+            <div class="grades-grid">
+                <div class="grade-tier">
+                    <div class="tier-header"><h3>Tier 1 — Brand New</h3></div>
+                    <div class="tier-body">
+                        <div class="grade-item">
+                            <div class="grade-item-head"><h5>Sealed — Unlocked</h5><span class="grade-tag">Premium</span></div>
+                            <p>Factory sealed in original manufacturer box. Never opened. Works on all Nigerian networks — MTN, Airtel, Glo, 9mobile.</p>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-item-head"><h5>Sealed — Locked</h5><span class="grade-tag">Value</span></div>
+                            <p>Factory fresh but carrier locked to a specific US network (e.g. AT&amp;T, T-Mobile). Best entry price for a brand-new device. Confirm compatibility before purchase.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grade-tier">
+                    <div class="tier-header"><h3>Tier 2 — Open Box</h3></div>
+                    <div class="tier-body">
+                        <div class="grade-item">
+                            <div class="grade-item-head"><h5>Open Box — Unlocked</h5><span class="grade-tag">Premium</span></div>
+                            <p>Box opened but barely used. Essentially new condition, all original accessories present. Carrier unlocked for all Nigerian networks.</p>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-item-head"><h5>Open Box — Locked</h5><span class="grade-tag">Value</span></div>
+                            <p>Same near-new condition. Carrier locked to a specific US network. Confirm compatibility before purchasing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grade-tier">
+                    <div class="tier-header"><h3>Tier 3 — Pre-Owned</h3></div>
+                    <div class="tier-body">
+                        <div class="grade-item">
+                            <div class="grade-item-head"><h5>Grade A</h5><span class="grade-tag">Battery 85%+</span></div>
+                            <p>Like new. No visible scratches at arm's length. Fully tested and functional. Compatible charger included.</p>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-item-head"><h5>Grade B</h5><span class="grade-tag">Battery 80%+</span></div>
+                            <p>Light scuffs from normal use, 100% functional. No deep scratches or cracks. Best value option.</p>
+                        </div>
+                        <div class="grade-item">
+                            <div class="grade-item-head"><h5>Grade C</h5><span class="grade-tag">Battery &lt;80%</span></div>
+                            <p>Noticeable signs of use — scratches or scuffs — but no screen cracks. Fully tested and working. Priced for the most budget-sensitive buyer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-pad" style="background: var(--white);">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Still have a question? Chat with us directly on WhatsApp.</p>
+            </div>
+            <div class="faq-grid">
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        How does See &amp; Pay work? Can I inspect before paying?
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        If you're in <strong>Ado-Ekiti or Abuja</strong>, we have escrows in both cities. You schedule a time, come in, hold the device, verify the IMEI, and check everything matches what we listed. You pay only when you're 100% satisfied — not a kobo before then.<br><br>
+                        For customers <strong>everywhere else in Nigeria</strong>, payment is made before dispatch. If the device doesn't match our description when it arrives, you have a <strong>72-hour window</strong> to raise it with us. We will cover all return shipping — no argument, no hassle.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you ship nationwide across Nigeria?
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        Yes. If you're anywhere in Nigeria, we can get your device to you. Payment is required before dispatch, and you're protected by our 72-hour return policy if anything doesn't match the listing.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Are your phones locked to specific networks?
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        Every listing clearly states whether the device is unlocked or carrier locked — we never hide this. Unlocked devices work on all Nigerian networks (MTN, Airtel, Glo, 9mobile). Locked devices are tied to a specific US carrier. If you're unsure whether a locked device will work for you, message us on WhatsApp before purchasing and we'll confirm compatibility for free.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What does the US retail price shown on listings mean?
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        The crossed-out dollar figure is the <strong>US market retail price</strong> — a reference point showing what the same device costs brand new in the US. It is not a discount from our naira price. Our NGN price reflects current import costs, logistics, and the Nigerian market rate. It's transparent pricing, not a markdown.
+                    </div></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you accept installments or trade-ins?
+                        <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer"><div class="faq-answer-inner">
+                        We are currently working on expanding our payment and trade-in options. For now, full payment is required at the point of purchase. Chat with us on WhatsApp and we'll discuss what works — we're always open to a conversation.
+                    </div></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="container">
+            <h2>Every device we sell is 100% authentic. None of them have touched a counterfeit refurb factory.</h2>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <svg width="300" height="66" viewBox="0 0 350 125" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(38, 15)">
+                            <path d="M 0 0 L 0 85 L 40 85 C 85 85 85 0 40 0 Z" fill="#14263d"/>
+                            <g stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" fill="none">
+                                <line x1="12" y1="18" x2="48" y2="18"/>
+                                <circle cx="12" cy="18" r="2.5" fill="#00E5FF"/>
+                                <circle cx="48" cy="18" r="3" fill="#00E5FF"/>
+                                <line x1="12" y1="30" x2="55" y2="30"/>
+                                <circle cx="12" cy="30" r="2.5" fill="#00E5FF"/>
+                                <circle cx="55" cy="30" r="3" fill="#00E5FF"/>
+                                <line x1="12" y1="42" x2="62" y2="42"/>
+                                <circle cx="12" cy="42" r="2.5" fill="#00E5FF"/>
+                                <rect x="28" y="34" width="16" height="16" rx="3" stroke="#00E5FF" stroke-width="2" fill="none"/>
+                                <rect x="32" y="38" width="8" height="8" rx="1" fill="#00E5FF" opacity="0.7"/>
+                                <circle cx="62" cy="42" r="4.5" fill="#00E5FF"/>
+                                <line x1="12" y1="54" x2="55" y2="54"/>
+                                <circle cx="12" cy="54" r="2.5" fill="#00E5FF"/>
+                                <circle cx="55" cy="54" r="3" fill="#00E5FF"/>
+                                <line x1="12" y1="66" x2="48" y2="66"/>
+                                <circle cx="12" cy="66" r="2.5" fill="#00E5FF"/>
+                                <circle cx="48" cy="66" r="3" fill="#00E5FF"/>
+                                <line x1="12" y1="18" x2="12" y2="66" stroke-width="1.5" opacity="0.6"/>
+                            </g>
+                        </g>
+                        <text x="120" y="90" font-family="'Playfair Display', serif" font-weight="600" font-size="76" fill="#ffffff" letter-spacing="-1">ixon</text>
+                        <g transform="translate(258, 56)" fill="none" stroke="#00E5FF" stroke-width="4.5" stroke-linecap="butt">
+                            <path d="M 0 -10 A 10 10 0 0 1 10 0"/>
+                            <path d="M 0 -20 A 20 20 0 0 1 20 0"/>
+                            <path d="M 0 -30 A 30 30 0 0 1 30 0"/>
+                            <path d="M 0 -40 A 40 40 0 0 1 40 0"/>
+                            <path d="M 0 -50 A 50 50 0 0 1 50 0"/>
+                        </g>
+                        <text x="126" y="110" font-family="'Inter', sans-serif" font-weight="500" font-size="12" letter-spacing="4" fill="#ffffff">TECHNOLOGIES</text>
+                    </svg>
+                    <p class="footer-tagline">Your Plug for Authentic Tech.<br>Operating online. Inspections in Ado-Ekiti &amp; Abuja.<br>Shipping nationwide across Nigeria.</p>
+                </div>
+                <div class="footer-links">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li><a href="#listings">Current Stock</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#grades">Quality Standards</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h5>Contact Us</h5>
+                    <ul>
+                        <li><a href="https://wa.me/2348102386382?text=Hi%20Dixon%20Technologies!" target="_blank" rel="noopener noreferrer">WhatsApp: +234 810 238 6382</a></li>
+                        <li><a href="&#109;&#097;&#105;&#108;&#116;&#111;&#058;&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#120;&#111;&#110;&#116;&#101;&#099;&#104;&#108;&#108;&#099;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#064;&#100;&#105;&#120;&#111;&#110;&#116;&#101;&#099;&#104;&#108;&#108;&#099;&#046;&#099;&#111;&#109;</a></li>
+                        <li><a href="https://instagram.com/dixontechnologies" target="_blank" rel="noopener noreferrer">Instagram: @dixontechnologies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Dixon Technologies. RC: 2930834. All Rights Reserved. dixontechllc.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" aria-label="Close lightbox">&#10005;</button>
+        <button class="lightbox-arrow prev" aria-label="Previous image">&#8249;</button>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Product image enlarged">
+        <button class="lightbox-arrow next" aria-label="Next image">&#8250;</button>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // Mobile menu
+            var toggleBtn = document.getElementById('menu-toggle');
+            var mobileNav = document.getElementById('mobile-nav');
+
+            function openMenu() {
+                toggleBtn.classList.add('active');
+                mobileNav.style.display = 'flex';
+                requestAnimationFrame(function() { mobileNav.classList.add('active'); });
+                document.body.classList.add('menu-open');
+            }
+            function closeMenu() {
+                toggleBtn.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                setTimeout(function() { mobileNav.style.display = 'none'; }, 300);
+            }
+
+            toggleBtn.addEventListener('click', function() {
+                mobileNav.classList.contains('active') ? closeMenu() : openMenu();
+            });
+            mobileNav.querySelectorAll('a').forEach(function(link) {
+                link.addEventListener('click', closeMenu);
+            });
+
+            // FAQ accordion
+            document.querySelectorAll('.faq-item').forEach(function(item) {
+                var btn = item.querySelector('.faq-question');
+                var answer = item.querySelector('.faq-answer');
+
+                btn.addEventListener('click', function() {
+                    var isOpen = item.classList.contains('open');
+                    document.querySelectorAll('.faq-item.open').forEach(function(open) {
+                        open.classList.remove('open');
+                        open.querySelector('.faq-answer').style.maxHeight = '0';
+                        open.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!isOpen) {
+                        item.classList.add('open');
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        btn.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            // ========== IMAGE CAROUSEL ==========
+            document.querySelectorAll('.card-img-wrap').forEach(function(wrap) {
+                var imgs = wrap.querySelectorAll('.card-img');
+                if (imgs.length <= 1) {
+                    // Single image: hide arrows and dots, still allow lightbox
+                    var arrows = wrap.querySelectorAll('.carousel-arrow');
+                    var dotsWrap = wrap.querySelector('.carousel-dots');
+                    arrows.forEach(function(a) { a.style.display = 'none'; });
+                    if (dotsWrap) dotsWrap.style.display = 'none';
+                    if (imgs.length === 1) imgs[0].classList.add('active');
+                    return;
+                }
+
+                var current = 0;
+                var dots = wrap.querySelectorAll('.carousel-dot');
+
+                function showSlide(index) {
+                    imgs[current].classList.remove('active');
+                    if (dots[current]) dots[current].classList.remove('active');
+                    current = (index + imgs.length) % imgs.length;
+                    imgs[current].classList.add('active');
+                    if (dots[current]) dots[current].classList.add('active');
+                }
+
+                wrap.querySelector('.carousel-arrow.prev').addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    showSlide(current - 1);
+                });
+                wrap.querySelector('.carousel-arrow.next').addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    showSlide(current + 1);
+                });
+                dots.forEach(function(dot, i) {
+                    dot.addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        showSlide(i);
+                    });
+                });
+
+                // Touch swipe support
+                var startX = 0;
+                var startY = 0;
+                var tracking = false;
+
+                wrap.addEventListener('touchstart', function(e) {
+                    startX = e.touches[0].clientX;
+                    startY = e.touches[0].clientY;
+                    tracking = true;
+                }, { passive: true });
+
+                wrap.addEventListener('touchmove', function(e) {
+                    if (!tracking) return;
+                    var dx = e.touches[0].clientX - startX;
+                    var dy = e.touches[0].clientY - startY;
+                    if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 30) {
+                        tracking = false;
+                        if (dx < 0) showSlide(current + 1);
+                        else showSlide(current - 1);
+                    }
+                }, { passive: true });
+
+                wrap.addEventListener('touchend', function() { tracking = false; }, { passive: true });
+            });
+
+            // ========== LIGHTBOX ==========
+            var overlay = document.getElementById('lightbox');
+            var lbImg = document.getElementById('lightbox-img');
+            var lbCounter = document.getElementById('lightbox-counter');
+            var lbPrev = overlay.querySelector('.lightbox-arrow.prev');
+            var lbNext = overlay.querySelector('.lightbox-arrow.next');
+            var lbClose = overlay.querySelector('.lightbox-close');
+            var lbImages = [];
+            var lbIndex = 0;
+
+            function openLightbox(images, index) {
+                lbImages = images;
+                lbIndex = index || 0;
+                updateLightbox();
+                overlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+                // Hide arrows if only one image
+                var multi = lbImages.length > 1;
+                lbPrev.style.display = multi ? '' : 'none';
+                lbNext.style.display = multi ? '' : 'none';
+                lbCounter.style.display = multi ? '' : 'none';
+            }
+
+            function closeLightbox() {
+                overlay.classList.remove('open');
+                document.body.style.overflow = '';
+            }
+
+            function updateLightbox() {
+                lbImg.src = lbImages[lbIndex];
+                lbCounter.textContent = (lbIndex + 1) + ' / ' + lbImages.length;
+            }
+
+            lbClose.addEventListener('click', closeLightbox);
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) closeLightbox();
+            });
+            lbPrev.addEventListener('click', function(e) {
+                e.stopPropagation();
+                lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length;
+                updateLightbox();
+            });
+            lbNext.addEventListener('click', function(e) {
+                e.stopPropagation();
+                lbIndex = (lbIndex + 1) % lbImages.length;
+                updateLightbox();
+            });
+
+            document.addEventListener('keydown', function(e) {
+                if (!overlay.classList.contains('open')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') { lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length; updateLightbox(); }
+                if (e.key === 'ArrowRight') { lbIndex = (lbIndex + 1) % lbImages.length; updateLightbox(); }
+            });
+
+            // Touch swipe in lightbox
+            var lbStartX = 0;
+            var lbTracking = false;
+            overlay.addEventListener('touchstart', function(e) {
+                lbStartX = e.touches[0].clientX;
+                lbTracking = true;
+            }, { passive: true });
+            overlay.addEventListener('touchmove', function(e) {
+                if (!lbTracking) return;
+                var dx = e.touches[0].clientX - lbStartX;
+                if (Math.abs(dx) > 50) {
+                    lbTracking = false;
+                    if (dx < 0) { lbIndex = (lbIndex + 1) % lbImages.length; }
+                    else { lbIndex = (lbIndex - 1 + lbImages.length) % lbImages.length; }
+                    updateLightbox();
+                }
+            }, { passive: true });
+            overlay.addEventListener('touchend', function() { lbTracking = false; }, { passive: true });
+
+            // Attach lightbox to card images — both single images and carousels
+            // Multi-image cards (using card-img-wrap)
+            document.querySelectorAll('.card-img-wrap').forEach(function(wrap) {
+                wrap.addEventListener('click', function() {
+                    var imgs = wrap.querySelectorAll('.card-img');
+                    var srcs = [];
+                    imgs.forEach(function(img) { srcs.push(img.src); });
+                    var activeIdx = 0;
+                    imgs.forEach(function(img, i) { if (img.classList.contains('active')) activeIdx = i; });
+                    openLightbox(srcs, activeIdx);
+                });
+            });
+
+            // Single-image cards (plain img.card-img not inside a wrap)
+            document.querySelectorAll('.card > img.card-img').forEach(function(img) {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function() {
+                    openLightbox([img.src], 0);
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
