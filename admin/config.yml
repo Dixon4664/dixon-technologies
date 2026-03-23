@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Dixon4664/dixon-technologies
   branch: main
+  base_url: https://sveltia-cms-auth.weathered-brook-1f72.workers.dev
 
 media_folder: "images/products"
 public_folder: "/images/products"
