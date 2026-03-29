@@ -1,0 +1,16 @@
+{
+  "network": "unlocked",
+  "available": true,
+  "name": "iPhone 12 64GB",
+  "badge": "badge-b",
+  "battery": 75,
+  "price_usd": 220,
+  "price_ngn": 250000,
+  "images": [
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817683/WhatsApp_Image_2026-03-29_at_3.45.19_PM_zajib2.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817683/WhatsApp_Image_2026-03-29_at_3.45.19_PM_1_vxmnfl.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817680/WhatsApp_Image_2026-03-29_at_3.45.19_PM_2_zqiinc.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817679/WhatsApp_Image_2026-03-29_at_3.45.19_PM_3_dxfohz.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817678/WhatsApp_Image_2026-03-29_at_3.45.19_PM_4_hmebjw.jpg"
+  ]
+}
