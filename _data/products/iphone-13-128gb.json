@@ -1,15 +1,15 @@
 {
-  "badge": "badge-b",
+  "badge": "badge-a",
   "available": true,
   "name": "iPhone 13 128GB",
   "video_url": "https://res.cloudinary.com/dj8pj2mpk/video/upload/w_480,ac_none,q_auto/v1774815139/WhatsApp_Video_2026-03-29_at_3.08.01_PM_h4oudj.mp4",
   "battery": 87,
   "network": "unlocked",
-  "price_usd": 280,
+  "price_usd": 300,
   "images": [
     "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774815137/WhatsApp_Image_2026-03-29_at_3.07.50_PM_1_qvym2a.jpg",
     "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774815137/WhatsApp_Image_2026-03-29_at_3.07.50_PM_yoj14t.jpg"
   ],
   "storage": "",
-  "price_ngn": 370
+  "price_ngn": 380
 }
