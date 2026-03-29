@@ -1,0 +1,16 @@
+{
+  "network": "unlocked",
+  "available": true,
+  "name": "iPhone 12 128GB",
+  "badge": "badge-b",
+  "battery": 85,
+  "images": [
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817292/WhatsApp_Image_2026-03-29_at_3.44.57_PM_jlkg9x.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817287/WhatsApp_Image_2026-03-29_at_3.47.41_PM_hyw1qd.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817287/WhatsApp_Image_2026-03-29_at_3.44.57_PM_4_zg6vqw.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817291/WhatsApp_Image_2026-03-29_at_3.44.57_PM_1_gayx1b.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774817288/WhatsApp_Image_2026-03-29_at_3.44.57_PM_2_jzebma.jpg"
+  ],
+  "price_ngn": 290000,
+  "price_usd": 250
+}
