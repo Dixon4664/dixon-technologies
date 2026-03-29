@@ -1,0 +1,14 @@
+{
+  "badge": "badge-a",
+  "available": true,
+  "name": "iPhone 15plus 128GB",
+  "video_url": "https://res.cloudinary.com/dj8pj2mpk/video/upload/w_480,ac_none,q_auto/v1774816300/WhatsApp_Video_2026-03-29_at_3.31.00_PM_u0ccml.mp4",
+  "battery": 82,
+  "network": "unlocked",
+  "price_usd": 500,
+  "images": [
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774816300/WhatsApp_Image_2026-03-29_at_3.28.41_PM_zwwutu.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1774816299/WhatsApp_Image_2026-03-29_at_3.28.41_PM_1_hfpauz.jpg"
+  ],
+  "price_ngn": 650000
+}
