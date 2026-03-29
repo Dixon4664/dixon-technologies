@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://dixontechllc.com">
     <meta property="og:type" content="website">
 
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://res.cloudinary.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com;">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://res.cloudinary.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; media-src https://res.cloudinary.com;">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
 
@@ -1130,7 +1130,6 @@
 
     <script>
         // ========== CMS PRODUCT LOADER ==========
-        // Fetches product JSON files from GitHub and renders cards dynamically
         (function() {
             var REPO = 'Dixon4664/dixon-technologies';
             var BRANCH = 'main';
@@ -1163,10 +1162,9 @@
                 var isSold = p.badge === 'badge-sold';
                 var isIncoming = p.badge === 'badge-incoming';
                 var available = p.available !== false;
-
                 if (!available) return '';
 
-                // Meta line
+                // Meta
                 var meta = [];
                 var networkText = NETWORK_MAP[p.network] || '';
                 if (networkText) meta.push(networkText);
@@ -1175,7 +1173,7 @@
                 }
                 var metaStr = meta.join(' \u00b7 ');
 
-                // Images
+                // Collect images
                 var images = [];
                 if (p.images && p.images.length) {
                     p.images.forEach(function(img) {
@@ -1184,22 +1182,37 @@
                     });
                 }
 
+                // Video support
+                var hasVideo = p.video_url && p.video_url.trim() !== '';
+                var totalSlides = images.length + (hasVideo ? 1 : 0);
+
+                // Build image/video HTML
                 var imgHTML = '';
-                if (images.length === 0) {
+                if (totalSlides === 0) {
                     imgHTML = '<div class="card-img" style="background:#f0f4f7;"></div>';
-                } else if (images.length === 1) {
+                } else if (totalSlides === 1 && !hasVideo) {
                     imgHTML = '<img src="' + images[0] + '" alt="' + p.name + '" class="card-img" loading="lazy" style="cursor:pointer;">';
+                } else if (totalSlides === 1 && hasVideo) {
+                    imgHTML = '<div class="card-img-wrap">' +
+                        '<video src="' + p.video_url + '" class="card-img active" style="object-fit:contain;" muted playsinline loop preload="metadata"></video>' +
+                        '</div>';
                 } else {
                     imgHTML = '<div class="card-img-wrap">';
+                    // Video first if present
+                    if (hasVideo) {
+                        imgHTML += '<video src="' + p.video_url + '" class="card-img active" style="object-fit:contain;" muted playsinline loop preload="metadata"></video>';
+                    }
+                    // Then images
                     images.forEach(function(url, i) {
-                        imgHTML += '<img src="' + url + '" alt="' + p.name + ' - photo ' + (i+1) + '" class="card-img' + (i === 0 ? ' active' : '') + '" loading="lazy">';
+                        var isActive = (!hasVideo && i === 0) ? ' active' : '';
+                        imgHTML += '<img src="' + url + '" alt="' + p.name + ' - photo ' + (i+1) + '" class="card-img' + isActive + '" loading="lazy">';
                     });
                     imgHTML += '<button class="carousel-arrow prev" aria-label="Previous image">&#8249;</button>';
                     imgHTML += '<button class="carousel-arrow next" aria-label="Next image">&#8250;</button>';
                     imgHTML += '<div class="carousel-dots">';
-                    images.forEach(function(url, i) {
-                        imgHTML += '<button class="carousel-dot' + (i === 0 ? ' active' : '') + '" aria-label="Image ' + (i+1) + '"></button>';
-                    });
+                    for (var di = 0; di < totalSlides; di++) {
+                        imgHTML += '<button class="carousel-dot' + (di === 0 ? ' active' : '') + '" aria-label="Slide ' + (di+1) + '"></button>';
+                    }
                     imgHTML += '</div></div>';
                 }
 
@@ -1232,44 +1245,60 @@
 
             function initCarouselsAndLightbox(parentEl) {
                 parentEl.querySelectorAll('.card-img-wrap').forEach(function(wrap) {
-                    var imgs = wrap.querySelectorAll('.card-img');
-                    if (imgs.length <= 1) {
+                    var slides = wrap.querySelectorAll('.card-img');
+                    if (slides.length <= 1) {
                         wrap.querySelectorAll('.carousel-arrow').forEach(function(a) { a.style.display = 'none'; });
                         var dotsWrap = wrap.querySelector('.carousel-dots');
                         if (dotsWrap) dotsWrap.style.display = 'none';
-                        if (imgs.length === 1) imgs[0].classList.add('active');
+                        if (slides.length === 1) slides[0].classList.add('active');
+                        // Auto-play single video on hover
+                        var vid = wrap.querySelector('video');
+                        if (vid) {
+                            wrap.addEventListener('mouseenter', function() { vid.play(); });
+                            wrap.addEventListener('mouseleave', function() { vid.pause(); });
+                        }
                         return;
                     }
                     var current = 0;
                     var dots = wrap.querySelectorAll('.carousel-dot');
                     function showSlide(index) {
-                        imgs[current].classList.remove('active');
+                        var oldEl = slides[current];
+                        oldEl.classList.remove('active');
+                        if (oldEl.tagName === 'VIDEO') oldEl.pause();
                         if (dots[current]) dots[current].classList.remove('active');
-                        current = (index + imgs.length) % imgs.length;
-                        imgs[current].classList.add('active');
+                        current = (index + slides.length) % slides.length;
+                        var newEl = slides[current];
+                        newEl.classList.add('active');
+                        if (newEl.tagName === 'VIDEO') newEl.play();
                         if (dots[current]) dots[current].classList.add('active');
                     }
                     wrap.querySelector('.carousel-arrow.prev').addEventListener('click', function(e) { e.stopPropagation(); showSlide(current - 1); });
                     wrap.querySelector('.carousel-arrow.next').addEventListener('click', function(e) { e.stopPropagation(); showSlide(current + 1); });
                     dots.forEach(function(dot, i) { dot.addEventListener('click', function(e) { e.stopPropagation(); showSlide(i); }); });
+                    // Auto-play video when it becomes active via hover
+                    wrap.addEventListener('mouseenter', function() {
+                        var activeVid = wrap.querySelector('video.card-img.active');
+                        if (activeVid) activeVid.play();
+                    });
+                    wrap.addEventListener('mouseleave', function() {
+                        var activeVid = wrap.querySelector('video.card-img.active');
+                        if (activeVid) activeVid.pause();
+                    });
+                    // Touch swipe
                     var startX = 0, startY = 0, tracking = false;
                     wrap.addEventListener('touchstart', function(e) { startX = e.touches[0].clientX; startY = e.touches[0].clientY; tracking = true; }, { passive: true });
                     wrap.addEventListener('touchmove', function(e) { if (!tracking) return; var dx = e.touches[0].clientX - startX; var dy = e.touches[0].clientY - startY; if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 30) { tracking = false; if (dx < 0) showSlide(current + 1); else showSlide(current - 1); } }, { passive: true });
                     wrap.addEventListener('touchend', function() { tracking = false; }, { passive: true });
                 });
 
-                // Lightbox for CMS cards
-                var overlay = document.getElementById('lightbox');
-                var lbImg = document.getElementById('lightbox-img');
-                var lbCounter = document.getElementById('lightbox-counter');
-                var lbPrev = overlay.querySelector('.lightbox-arrow.prev');
-                var lbNext = overlay.querySelector('.lightbox-arrow.next');
-                var lbClose = overlay.querySelector('.lightbox-close');
-
+                // Lightbox for CMS cards (images only, not video)
                 parentEl.querySelectorAll('.card-img-wrap').forEach(function(wrap) {
-                    wrap.addEventListener('click', function() {
-                        var imgs = wrap.querySelectorAll('.card-img');
+                    wrap.addEventListener('click', function(e) {
+                        // Don't open lightbox if clicking on video (let it play) or arrows
+                        if (e.target.tagName === 'VIDEO' || e.target.closest('.carousel-arrow') || e.target.closest('.carousel-dot')) return;
+                        var imgs = wrap.querySelectorAll('img.card-img');
                         var srcs = []; imgs.forEach(function(img) { srcs.push(img.src); });
+                        if (srcs.length === 0) return;
                         var activeIdx = 0; imgs.forEach(function(img, i) { if (img.classList.contains('active')) activeIdx = i; });
                         window.dispatchEvent(new CustomEvent('open-lightbox', { detail: { images: srcs, index: activeIdx } }));
                     });
@@ -1296,9 +1325,7 @@
                 .then(function(products) {
                     if (!products || !products.length) return;
                     var html = '';
-                    products.forEach(function(p) {
-                        html += buildCardHTML(p);
-                    });
+                    products.forEach(function(p) { html += buildCardHTML(p); });
                     container.innerHTML = html;
                     initCarouselsAndLightbox(container);
                 })
@@ -1313,7 +1340,6 @@
                 var lbCounter = document.getElementById('lightbox-counter');
                 var lbPrev = overlay.querySelector('.lightbox-arrow.prev');
                 var lbNext = overlay.querySelector('.lightbox-arrow.next');
-
                 var images = e.detail.images;
                 var index = e.detail.index || 0;
                 lbImg.src = images[index];
@@ -1324,12 +1350,10 @@
                 lbCounter.style.display = multi ? '' : 'none';
                 overlay.classList.add('open');
                 document.body.style.overflow = 'hidden';
-
-                // Store for arrow navigation
                 overlay._cmsImages = images;
                 overlay._cmsIndex = index;
             });
         })();
     </script>
-    </body>
+</body>
 </html>
