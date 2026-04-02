@@ -1,0 +1,16 @@
+{
+  "network": "unlocked",
+  "available": true,
+  "name": "iPhone 12 Pro Max 128GB",
+  "badge": "badge-a",
+  "battery": 81,
+  "price_usd": 350,
+  "price_ngn": 430000,
+  "images": [
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1775093768/WhatsApp_Image_2026-03-29_at_3.45.38_PM_1_ou90ix.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1775093769/WhatsApp_Image_2026-03-29_at_3.45.38_PM_ndpu9z.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1775093764/WhatsApp_Image_2026-03-29_at_3.45.38_PM_4_pfdnhk.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1775093765/WhatsApp_Image_2026-03-29_at_3.45.38_PM_3_pu1ill.jpg",
+    "https://res.cloudinary.com/dj8pj2mpk/image/upload/v1775093765/WhatsApp_Image_2026-03-29_at_3.45.38_PM_2_ie5mro.jpg"
+  ]
+}
